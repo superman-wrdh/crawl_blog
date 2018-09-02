@@ -12,3 +12,21 @@ class CrawalBlogItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
+
+
+class ArticleSummary(scrapy.Item):
+    article_title = scrapy.Field()
+    article_summary = scrapy.Field()
+    article_content = scrapy.Field()
+    article_created_time = scrapy.Field()
+    article_viewed = scrapy.Field()
+
+
+class Article(scrapy.Item):
+    article_title = scrapy.Field()
+    article_summary = scrapy.Field()
+    article_type = scrapy.Field()
+    article_content = scrapy.Field()
+    article_keyword = scrapy.Field()
+    article_created_time = scrapy.Field()
+    article_viewed = scrapy.Field()
